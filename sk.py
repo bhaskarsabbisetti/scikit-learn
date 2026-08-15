@@ -2,6 +2,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score, confusion_matrix
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 model=LinearRegression()
 model2=LogisticRegression()
 X = [
@@ -52,10 +53,7 @@ probability = model2.predict_proba(new_student)
 
 print("Prediction:", prediction)
 print("Probability:", probability)
-cm = confusion_matrix(Y_test, prediction)
 
-print("Confusion Matrix:")
-print(cm)
 # //linear regression
 # x = [
 #     [850, 2, 1, 15, 12.5, 1],
