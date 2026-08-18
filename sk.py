@@ -3,11 +3,7 @@ from sklearn.metrics import r2_score, confusion_matrix
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-<<<<<<< Updated upstream
-
 from sklearn.metrics import accuracy_score
-=======
->>>>>>> Stashed changes
 model=LinearRegression()
 model2=LogisticRegression()
 X = [
